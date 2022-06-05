@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1> LOVE P'GIFT AND TUKTIK FOREVER</h1>
         <p>
           Test Deploy Netlify React Repo
         </p>
