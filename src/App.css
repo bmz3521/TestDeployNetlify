@@ -2,17 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
+.textShow{
+  font-size: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.head1 {
+  margin-bottom: 20px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +19,102 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+span{
+  position: absolute;
   color: white;
+  font-weight: bolder;
+  font-size: 40px !important;
+}
+.image_container{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
 }
 
+.image_container2{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image_container2 img {
+  width: auto; 
+  height: 100%; 
+  margin-left: -30px;
+}
+
+.image_container img {
+  width:100%;
+}
+
+.App-logo{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image_container2:hover .App-logo {
+  opacity: 0.3;
+}
+.image_container2:hover .middle {
+  opacity: 1;
+}
+.image_container:hover .App-logo {
+  opacity: 0.3;
+}
+
+.image_container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+.circular_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display:inline-block;
+  vertical-align:middle;
+}
+.circular_image img{
+  width:100%;
 }
