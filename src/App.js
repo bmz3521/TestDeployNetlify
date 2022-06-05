@@ -72,7 +72,7 @@ function App() {
             <div className='image_container col'>
               <img src={Milo} className="App-logo" alt="logo" />
               <div class="middle">
-                <div class="text">Milo</div>
+                <div class="text">Milo</div> 
               </div>
             </div>
           </div>
